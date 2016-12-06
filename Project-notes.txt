@@ -1,0 +1,21 @@
+Module loaders:
+
+require.js, browserify, webpack.
+
+
+Principles of Redux:
+
+1) Everything that changes in the application, including the data and the UI state, is contained in a single object: the state or state tree.
+
+2) The state tree is read only. To make changes you need to dispatch actions, which are a representation of a change.
+
+3) To describe state mutations you have to write a function that takes the previous state of the app, the action being dispatched, and returns the next state of the app. This function has to be pure, and is called the reducer.
+
+
+
+A pure function is a function whose returned value depends solely on the values of the arguments.
+Impure functions:
+- May call database/network
+- Side effects
+- Operate on the DOM
+- Modify the arguments received
