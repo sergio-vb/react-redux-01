@@ -19,3 +19,19 @@ Impure functions:
 - Side effects
 - Operate on the DOM
 - Modify the arguments received
+
+
+Other conventions of redux:
+
+- If the reducer receives undefined as the state object, it must return what it considers to be the initial state.
+
+
+Redux Store
+
+The store binds together the 3 principals of redux: It holds the current application state object, it lets you dispatch actions, and when you create it you need to specify the reducer that describes how state is updated with actions.
+
+The store has 3 important methods:
+
+1) store.getState()
+2) store.dispatch( [the action object] )
+3) store.subscribe( [callback function to call when an action has been dispatched ] )
